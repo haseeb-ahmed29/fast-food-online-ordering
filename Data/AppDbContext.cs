@@ -5,4 +5,6 @@ namespace FastFoodOnlineOrdering.Data;
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
     public DbSet<MenuItem> MenuItems => Set<MenuItem>();
+ public DbSet<Category> Categorys => Set<Category>();
+ public DbSet<Order> Orders => Set<Order>();
 }
